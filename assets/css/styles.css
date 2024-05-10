@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.yellow {
+    background-color: hsla(51, 100%, 49%, .2);
+}
+
+.red {
+    background-color: hsla(7, 99%, 70%, .2);
+}
+
+.hide-menu {
+    top: -300px !important;
+}
+
+#header-container {
+    background-image: url('../images/mobile/image-header.jpg');
+    background-size: cover;
+    height: 460px;
+}
+
+#header-container header {
+    width: 280px;
+    padding-top: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#header-container header .menu-desktop {
+    display: none;
+}
+
+#header-container header .menu-desktop a {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+#header-container header .menu-desktop a:last-child {
+    font-family: "Fraunces", serif;
+    background-color: #fff;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+#header-container header .menu {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    top: 100px;
+    transition: .5s;
+    
+}
+
+#header-container header .menu .triangulo {
+    width: 0;
+    height: 0;
+    border-left: 20px solid #fff;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    rotate: 180deg;
+}
+
+#header-container header .menu ul {
+    list-style: none;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header-container header .menu ul li {
+    width: 260px;
+    text-align: center;
+    border-radius: 50px;
+    padding: 15px 35px;
+}
+
+#header-container header .menu ul li .link {
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    color: hsl(232, 10%, 55%);
+    font-family: "Barlow", sans-serif;
+    
+}
+
+.link-clicked {
+    background-color: hsl(51, 100%, 49%);
+    text-transform: uppercase;
+    color: #000000 !important;
+    font-family: "Fraunces", serif !important; 
+    font-weight: 700 !important;
+    padding: 15px 35px;
+    border-radius: 50px;
+}
+
+#header-container h1 {
+    font-size: 32px;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+
+#header-container .arrow-icon {
+    display: block;
+    text-align: center;
+    margin: 50px auto 0;
+}
+
+#about-us {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+}
+
+#about-us .skill-bg {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+}
+
+#about-us .skill-bg.egg {
+    background-image: url('../images/mobile/image-transform.jpg');
+    height: 100%;
+}
+
+#about-us .skill-bg.cup {
+    background-image: url('../images/mobile/image-stand-out.jpg');
+    height: 100%;
+}
+
+#about-us .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: 50px 30px;
+}
+
+#about-us .skill h2,
+#about-us .skill-bg h2 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+#about-us .skill p,
+#about-us .skill-bg p {
+    font-family: "Barlow", sans-serif;
+    color: hsl(232, 10%, 55%);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+#about-us .skill .link {
+    position: relative;
+}
+
+#about-us .skill .link a {
+    text-transform: uppercase;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    color: #000;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#about-us .skill .link .border {
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -5px;
+}
+
+#about-us .skill-bg h2,
+#about-us .skill-bg p {
+ color: hsla(0, 0%, 0%, .5);
+}
+
+#about-us .skill-bg h2 {
+    padding-bottom: 30px;
+}
+
+#about-us .skill-bg p {
+    padding: 0 8px;
+}
+
+#about-us .skill-bg.cherry,
+#about-us .skill-bg.tangerine {
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#about-us .skill-bg.cherry {
+    background-image: url('../images/mobile/image-graphic-design.jpg');
+}
+
+#about-us .skill-bg.tangerine {
+    background-image: url('../images/mobile/image-photography.jpg');
+}
+
+#testimonials-container,
+#testimonials-container .testimonials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#testimonials-container h3 {
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    font-family: "Fraunces", serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+#testimonials-container .testimonials .image {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    border-radius: 50px;
+    margin: 0 auto 20px;
+}
+
+#testimonials-container .testimonials p {
+    font-size: 14px;
+    font-family: "Barlow", sans-serif;
+    color: hsl(232, 10%, 55%);
+    line-height: 20px;
+    margin: 0 20px 20px;
+    font-weight: 600;
+}
+
+#testimonials-container .testimonials span {
+    display: block;
+}
+
+#testimonials-container .testimonials .name {
+    font-family: "Fraunces", serif;
+    font-size: 14px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#testimonials-container .testimonials .career {
+    font-size: 12px;
+    font-family: "Barlow", sans-serif;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 40px;
+}
+
+#testimonials-container .testimonials .image.emily-img {
+    background-image: url('../images/image-emily.jpg');
+}
+#testimonials-container .testimonials .image.thomas-img {
+    background-image: url('../images/image-thomas.jpg');
+}
+#testimonials-container .testimonials .image.jennie-img {
+    background-image: url('../images/image-jennie.jpg');
+}
+
+#images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: 376px;
+}
+
+#images .img-1 {
+    background-image: url('../images/mobile/image-gallery-milkbottles.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#images .img-2 {
+    background-image: url('../images/mobile/image-gallery-orange.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#images .img-3 {
+    background-image: url('../images/mobile/image-gallery-cone.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#images .img-4 {
+    background-image: url('../images/mobile/image-gallery-sugar-cubes.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-family: "Barlow", sans-serif;
+    background-color: hsla(168, 34%, 41%, .5);
+}
+
+footer h4 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 30px;
+    color: hsla(0, 0%, 0%, .5);
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+
+footer nav ul a {
+    text-decoration: none;
+    color: hsla(0, 0%, 0%, .5);
+    font-weight: 600;
+}
+
+footer nav .social-media {
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+@media(min-width: 370px) {
+    #header-container {
+        height: 500px;
+        background-position-y: -38px;
+    }
+
+    #header-container header {
+        width: 335px;
+    }
+
+    #header-container header .menu ul {
+        margin: 35px 0;
+    }
+
+    #header-container h1 {
+        margin-top: 60px;
+        font-size: 36px;
+    }
+    
+    #about-us .skill {
+        margin: 50px 28px;
+    }
+
+    #about-us .skill h2, 
+    #about-us .skill-bg h2 {
+        font-size: 30px;
+    }
+
+    #about-us .skill p, 
+    #about-us .skill-bg p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    #about-us .skill-bg.cherry, 
+    #about-us .skill-bg.tangerine {
+        height: 600px;
+    }
+    
+    #testimonials-container h3 {
+        margin: 50px 0;
+    }
+
+    #testimonials-container .testimonials .image {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 30px;
+    }
+
+
+    #testimonials-container .testimonials p {
+        font-size: 18px;
+        line-height: 25px;
+        margin: 0 24px 20px;
+    }
+
+    #testimonials-container .testimonials .name {
+        font-size: 18px;
+    }
+
+    #testimonials-container .testimonials .career {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    footer h4 {
+        font-size: 40px;
+    }
+
+    footer nav ul a {
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 420px) {
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body {
+        max-width: 425px;
+    }
+
+    #header-container {
+        height: 550px;
+        background-position-y: -60px;
+    }
+
+    #header-container header {
+        width: 385px;
+    }
+
+    #header-container header .menu ul {
+        margin: 50px 0;
+    }
+
+    #header-container h1 {
+        margin-top: 80px;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+
+    #about-us .skill h2, 
+    #about-us .skill-bg h2 {
+        font-size: 36px;
+    }
+
+    #about-us .skill {
+        margin: 50px 35px;
+    }
+
+    #testimonials-container .testimonials p {
+        margin: 0 47px 20px;
+    }
+
+    footer h4 {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+@media(min-width: 750px) {
+    body {
+        margin-left: auto;
+        max-width: 100%;
+    }
+
+    #header-container {
+        height: 650px;
+        background-position-y: 0;
+        background-position-x: -200px;
+        background-image: url('../images/desktop/image-header.jpg');
+    }
+
+    #header-container header {
+        width: 100%;
+        padding: 30px 20px 0;
+        position: static;
+    }
+
+    #header-container header .hamburger-icon {
+        display: none;
+    }
+    
+    #header-container header .menu-desktop {
+        display: flex;
+        gap: 10px;
+    }
+
+    #about-us {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about-us div:nth-child(2) {
+        order: -1;
+    }
+
+    #about-us .skill-bg.cherry {
+        padding-bottom: 25px;
+    }
+
+    #images {
+        height: 894px;
+    }
+    
+    #images .img-1{
+        background-image: url('../images/desktop/image-gallery-milkbottles.jpg');
+    }
+
+    #images .img-2{
+        background-image: url('../images/desktop/image-gallery-orange.jpg');
+    }
+
+    #images .img-3{
+        background-image: url('../images/desktop/image-gallery-cone.jpg');
+    }
+
+    #images .img-4{
+        background-image: url('../images/desktop/image-gallery-sugarcubes.jpg');
+    }
+
+    footer nav ul {
+        width: 400px;
+        margin: 0 auto 80px;
+    }
+}
+
+@media(min-width: 1024px) {
+    #header-container {
+        background-position-x: -70px;
+    }
+
+    #about-us .skill {
+        align-items: flex-start;
+        text-align: left;
+        padding: 30px;
+    }
+
+    #header-container header .menu-desktop a:last-child:hover {
+        color: #fff;
+        background-color: rgb(255, 255, 255, .5);
+    }
+
+    #about-us .skill-bg.cherry,
+    #about-us .skill-bg.tangerine {
+        height: 750px;
+    }
+
+    #about-us .skill-bg h2 {
+        margin-top: 30px;
+    }
+
+    #about-us .skill-bg p {
+        padding: 20px 70px;
+    }
+
+    #about-us .skill .link {
+        transition: .5s;
+    }
+
+    #about-us .skill .link:hover .border.red {
+        background-color: hsla(7, 99%, 70%, .5);
+    }
+
+    #about-us .skill .link:hover .border.yellow {
+        background-color: hsla(51, 100%, 49%, .5);
+    }
+
+
+    #testimonials-container h3 {
+        margin: 100px 0 50px;
+    }
+
+    #testimonials-container .testimonials {
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    #images {
+        height: 1270px;
+    }
+
+    footer nav ul a {
+        transition: .5s;
+    }
+
+    footer nav ul a:hover {
+        color: #fff;
+    }
+}
+
+@media(min-width: 1440px) {
+    body {
+        width: 1440px;
+        margin: 0 auto;
+        background-color: #3EBFFF;
+    }
+
+    #container {
+        background-color: #fff;
+    }
+    
+    #header-container {
+        background-position-y: -100px;
+        background-position-x: 10px;
+        height: 700px;
+    }
+
+    #about-us .skill {
+        justify-content: center;
+        padding: 100px;
+    }
+
+    #about-us .skill-bg.egg,
+    #about-us .skill-bg.cup {
+        height: 600px;
+    }
+
+
+    #about-us .skill-bg.egg {
+        background-image: url('../images/desktop/image-transform.jpg');
+    }
+
+    #about-us .skill-bg.cup {
+        background-image: url('../images/desktop/image-stand-out.jpg');
+    }
+
+    #about-us .skill-bg.cherry, 
+    #about-us .skill-bg.tangerine {
+        height: 650px;
+    }
+
+    #about-us .skill-bg.cherry {
+        background-image: url('../images/desktop/image-graphic-design.jpg');
+    }
+    
+    #about-us .skill-bg.tangerine {
+        background-image: url('../images/desktop/image-photography.jpg');
+    }
+
+    #images {
+        grid-template-columns: repeat(4, 1fr);
+        height: 450px;
+    }
+}
